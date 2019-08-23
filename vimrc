@@ -11,7 +11,6 @@ Plugin 'tpope/vim-fugitive'
 "filesystem
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'Yggdroot/LeaderF'
 
 "html
 "  isnowfy only compatible with python not python3
@@ -27,7 +26,7 @@ Plugin 'scrooloose/syntastic'
 
 "auto-completion stuff
 "Plugin 'klen/python-mode'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'klen/rope-vim'
 "Plugin 'davidhalter/jedi-vim'
 Plugin 'ervandew/supertab'
@@ -39,13 +38,13 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'jnurmine/Zenburn'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
-"airline
+"File list
+Plugin 'Yggdroot/LeaderF'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-"taglist
 Bundle 'taglist.vim'
-
+Bundle 'vim-gitgutter'
 
 call vundle#end()
 
@@ -96,6 +95,9 @@ au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=4
 au BufRead,BufNewFile *.py,*pyw set shiftwidth=4
 au BufRead,BufNewFile *.py,*.pyw set expandtab
 au BufRead,BufNewFile *.py set softtabstop=4
+au BufRead,BufNewFile *.cc,*.h,*.c set shiftwidth=8
+au BufRead,BufNewFile *.cc,*.h,*.c set expandtab
+au BufRead,BufNewFile *.cc,*.h,*.c set softtabstop=8
 
 " Use the below highlight group when displaying bad whitespace is desired.
 highlight BadWhitespace ctermbg=red guibg=red
@@ -103,13 +105,13 @@ highlight BadWhitespace ctermbg=red guibg=red
 " Display tabs at the beginning of a line in Python mode as bad.
 au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 " Make trailing whitespace be flagged as bad.
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.cc,*.h match BadWhitespace /\s\+$/
 
 " Wrap text after a certain number of characters
 au BufRead,BufNewFile *.py,*.pyw, set textwidth=79
 
 " Use UNIX (\n) line endings.
-au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
+au BufNewFile *.py,*.pyw,*.c,*.cc,*.h set fileformat=unix
 
 " Set the default file encoding to UTF-8:
 set encoding=utf-8
@@ -133,3 +135,9 @@ nnoremap <space> za
 
 "js stuff"
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+
+
+
+set background=dark
+colorscheme molokai
+
