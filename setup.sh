@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # tmux
+yum -y install  https://centos7.iuscommunity.org/ius-release.rpm
+yum install -y tmux2u
 cp ./tmux.conf ~/.tmux.conf
 
 # fonts
