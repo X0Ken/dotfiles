@@ -17,5 +17,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 cp ./vimrc ~/.vimrc
 vim +PluginInstall +qall
 
-echo "dont forget to install / update YoucompleteMe, Leaderf"
+echo "dont forget to install / update Leaderf"
 
