@@ -22,7 +22,7 @@ Plug 'tpope/vim-fugitive'
 " File
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 " Tag
-Plug 'vim-scripts/taglist.vim'
+Plug 'majutsushi/tagbar'
 
 call plug#end()
 
