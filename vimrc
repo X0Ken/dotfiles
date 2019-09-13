@@ -10,7 +10,7 @@ Plug 'nvie/vim-flake8'
 Plug 'vim-syntastic/syntastic'
 
 " Color
-Plug 'jnurmine/Zenburn'
+Plug 'tomasr/molokai'
 
 " powerline
 Plug 'vim-airline/vim-airline'
@@ -79,7 +79,7 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set shiftwidth=2
 
 " Color
-colorscheme zenburn
+colorscheme molokai
 highlight BadWhitespace ctermbg=red guibg=red
 " Flagging Unnecessary Whitespace
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
