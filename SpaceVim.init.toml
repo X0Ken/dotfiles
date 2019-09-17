@@ -24,6 +24,7 @@
     enable_tabline_filetype_icon = true
     enable_statusline_mode = false
     filemanager = "defx"
+    statusline_unicode_symbols = false
 
 # Enable autocomplete layer
 [[layers]]
