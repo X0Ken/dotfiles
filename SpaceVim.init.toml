@@ -42,7 +42,7 @@ default_height = 30
 name = "lang#c"
 
 [[layers]]
-name = "leaderf"
+name = "denite"
 
 [[layers]]
 name = "colorscheme"
