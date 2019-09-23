@@ -25,6 +25,8 @@
     enable_statusline_mode = false
     filemanager = "defx"
     statusline_unicode_symbols = false
+    enable_neomake = false
+    enable_ale = true
 
 # Enable autocomplete layer
 [[layers]]
