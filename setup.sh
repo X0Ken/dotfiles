@@ -22,5 +22,12 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 cp ./vimrc ~/.vimrc
 vim +PlugInstall +qall
 
+# ag
+yum install -y the_silver_searcher
+
+# rg
+# yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/carlwgeorge/ripgrep/repo/epel-7/carlwgeorge-ripgrep-epel-7.repo
+# yum install ripgrep
+
 echo "dont forget to install / update Leaderf"
 
