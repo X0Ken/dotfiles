@@ -26,8 +26,9 @@ vim +PlugInstall +qall
 yum install -y the_silver_searcher
 
 # rg
-# yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/carlwgeorge/ripgrep/repo/epel-7/carlwgeorge-ripgrep-epel-7.repo
-# yum install ripgrep
+yum install -y yum-utils
+yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/carlwgeorge/ripgrep/repo/epel-7/carlwgeorge-ripgrep-epel-7.repo
+yum install -y ripgrep
 
-echo "dont forget to install / update Leaderf"
+echo "Install success"
 
