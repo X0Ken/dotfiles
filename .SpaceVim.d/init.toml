@@ -27,6 +27,8 @@
     statusline_unicode_symbols = false
     enable_neomake = false
     enable_ale = true
+    bootstrap_before = "myspacevim#before"
+    bootstrap_after  = "myspacevim#after"
 
 # Enable autocomplete layer
 [[layers]]
@@ -49,9 +51,9 @@ name = "denite"
 [[layers]]
 name = "colorscheme"
 
-[[custom_plugins]]
-name = "tomasiser/vim-code-dark"
-merged = 0
+#[[custom_plugins]]
+#name = "tomasiser/vim-code-dark"
+#merged = 0
 
 [[layers]]
 name = "VersionControl"
